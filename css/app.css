@@ -1,18 +1,14 @@
 /* my lyout */
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 :root {
-    --sidebar-width:150px; 
+    --sidebar-width:150px;
 }
 
-#app, 
-.app__content, 
-.app__toolbar, 
+#app,
+.app__content,
+.app__toolbar,
 .app__main-content {
     overflow: hidden;
 }
@@ -28,12 +24,14 @@
 
 .app__toolbar {
     background-color:#F8F9FA;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 .app__sidebar {
     width:67px;
 }
+
+
 
 /* Aside app toolbar */
 
@@ -71,13 +69,13 @@
     color: orange;
 }
 
-/* header  */
- 
+/* Header  */
+
 .item-icon {
     line-height: 35px;
     width: 30px;
     font-size: 25px;
-    
+
 }
 
 .user__settings {
@@ -88,18 +86,31 @@
     color: white;
 }
 
-/* debug */
+/* Main header */
 
+.main__content-header {
+    background-color: #1B72E8;
+    width: 100%;
 
-/* .debug .app__toolbar {
-	border: 2px solid yellow;
-	/* padding: 10px 20px; */
 }
 
-.debug .app__content, .app__sidebar  {
-	border: 2px solid black;
-	/* padding: 20px; */
-}  */
+.ms__button {
+    background-color: transparent;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.icon-plus {
+    color: white;
+    font-size: 20px;
+}
+
+.ms_badge {
+    background-color:#165BBA;
+}
 
 
 
