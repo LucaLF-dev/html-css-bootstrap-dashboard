@@ -39,8 +39,37 @@
 
     <div class="app__content flex-grow-1 d-flex">
 
-       <header class="app__sidebar">
+       <header class="app__sidebar d-flex flex-column flex-shrink-0 p-4 ">
+          <nav class="ms__nav  d-flex flex-column flex-grow-1 ">
+                <ul class="ms__nav-menu list-unstyled">
+                    <li class="menu__item  pb-3">
+                        <a class="d-flex justify-content-center align-items-center column-gap-2 text-decoration-none  " href="#">
+                             <span class="item-icon"><i class="fa-solid fa-house"></i></span>
+                            <span class="item-text d-none d-lg-block">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item  pb-3">
+                        <a class="d-flex justify-content-center align-items-center column-gap-2 text-decoration-none" href="#">
+                             <span class="item-icon"><i class="fa-solid fa-chart-simple"></i></span>
+                            <span class="item-text d-none d-lg-block">Stats</span>
+                        </a>
+                    </li>
+                    <li class="menu__item  pb-3">
+                        <a class="d-flex justify-content-center align-items-center column-gap-2 text-decoration-none" href="#">
+                             <span class="item-icon"><i class="fa-solid fa-signal"></i></span>
+                            <span class="item-text d-none d-lg-block">Signals</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user__settings">
+                <a class="d-flex justify-content-center align-items-center column-gap-2 text-decoration-none " href="#">
+                    <span class="item-icon"><i class="fa-solid fa-gear"></i></span>
+                   <span class="item-text d-none d-lg-block">Admin</span>
+               </a>
+            </div>
 
+          </nav>
        </header>
 
        <main class="app__main-content">
