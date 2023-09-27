@@ -27,8 +27,8 @@
 }
 
 .app__toolbar {
-     background-color:#F8F9FA;
-     padding: 10px 0; 
+    background-color:#F8F9FA;
+    padding: 10px 0; 
 }
 
 .app__sidebar {
@@ -39,6 +39,7 @@
 
 .ms__container-toolbar {
     background-color: white;
+    padding: 0 10px;
 }
 
 .app__logo {
@@ -61,6 +62,10 @@
     width: 20%;
 }
 
+.list__items-link > li a {
+    text-decoration: none;
+    color: ;
+}
 /* debug */
 
 

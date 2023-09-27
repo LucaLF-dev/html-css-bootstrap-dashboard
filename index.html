@@ -14,21 +14,26 @@
  <div id="app" class="d-flex flex-column" >
     
     <aside class="app__toolbar">
-        <div class="ms__container-toolbar">
+        <div class="ms__container-toolbar d-flex align-items-center">
             <div class="app__logo ">
                 <img class="logo img-fluid d-none d-lg-block " src="./img/logo.svg" alt="">
                 <img class="logo-small img-fluid d-block d-lg-none" src="./img/mobile-logo.png" alt="">
             </div>
             <div class="app__search">
-                
+                <form class="d-flex" role="search">
+                   <input class="form-control me-2 bg-gradient" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" id="search"  >
+                   <label for="search"></label>
+                </form>
             </div>
             <div class="app__items-link">
-                <ul>
-                    <li><a class="items-link" href="#"></a></li>
+                <ul class="list__items-link d-flex justify-content-center align-items-center list-unstyled">
                     <li><a class="items-link" href="#"></a></li>
                     <li><a class="items-link" href="#"></a></li>
                     <li><a class="items-link" href="#"></a></li>
                 </ul>
+                <div class="app__bell-link">
+
+                </div>
             </div>
         </div>
     </aside>
