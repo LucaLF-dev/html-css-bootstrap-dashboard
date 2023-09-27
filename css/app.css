@@ -1,6 +1,48 @@
 /* my lyout */
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#app, 
+.app__content, 
+.app__toolbar, 
+.app__main-content {
+    overflow: hidden;
+}
+
 #app {
-    width: 100vw;
+    height: 100vh;
     color: white;
 }
+
+.app__sidebar {
+    background-color: #051E34 ;
+}
+
+.app__toolbar {
+    height: 70px;
+    background-color:#F8F9FA;
+}
+
+.app__sidebar {
+    
+}
+
+/* debug */
+
+
+.debug .app__toolbar {
+	border: 2px solid yellow;
+	/* padding: 10px 20px; */
+}
+
+.debug .app__content, .app__sidebar  {
+	border: 2px solid black;
+	/* padding: 20px; */
+} 
+
+
+
