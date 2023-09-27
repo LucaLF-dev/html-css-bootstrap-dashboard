@@ -42,7 +42,7 @@
 }
 
 .app__logo {
-    width: 30%;
+    width: 20%;
 }
 
 .logo-small {
@@ -51,6 +51,14 @@
 
 .logo {
    width: 136px;
+}
+
+.app__search {
+    width: 60%;
+}
+
+.app__items-link {
+    width: 20%;
 }
 
 /* debug */
