@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+:root {
+    --sidebar-width:150px; 
+}
+
 #app, 
 .app__content, 
 .app__toolbar, 
@@ -23,18 +27,36 @@
 }
 
 .app__toolbar {
-    height: 70px;
-    background-color:#F8F9FA;
+     background-color:#F8F9FA;
+     padding: 10px 0; 
 }
 
 .app__sidebar {
-    
+    width:67px;
+}
+
+/* Aside app toolbar */
+
+.ms__container-toolbar {
+    background-color: white;
+}
+
+.app__logo {
+    width: 30%;
+}
+
+.logo-small {
+    width: 50px;
+}
+
+.logo {
+   width: 136px;
 }
 
 /* debug */
 
 
-.debug .app__toolbar {
+/* .debug .app__toolbar {
 	border: 2px solid yellow;
 	/* padding: 10px 20px; */
 }
@@ -42,7 +64,7 @@
 .debug .app__content, .app__sidebar  {
 	border: 2px solid black;
 	/* padding: 20px; */
-} 
+}  */
 
 
 
