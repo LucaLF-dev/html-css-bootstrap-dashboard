@@ -64,7 +64,11 @@
 
 .list__items-link > li a {
     text-decoration: none;
-    color: ;
+    color: grey;
+}
+
+.bell-link {
+    color: orange;
 }
 /* debug */
 
