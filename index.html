@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
-<body class="debug">
 
- <div id="app" class="d-flex flex-column" >
+<body>
+
+<div id="app" class="d-flex flex-column" >
     
-    <aside class="app__toolbar">
+    <!-- Toolbar APP superiore -->
+
+    <aside class="app__toolbar  ">
         <div class="ms__container-toolbar d-flex align-items-center">
             <div class="app__logo ">
                 <img class="logo img-fluid d-none d-lg-block " src="./img/logo.svg" alt="">
@@ -45,9 +48,13 @@
         </div>
     </aside>
 
+    <!-- end Toolbar superiore -->
+
+    <!-- Content APP -->
+
     <div class="app__content flex-grow-1 d-flex">
 
-       <header class="app__sidebar d-flex flex-column flex-shrink-0 p-4 ">
+         <header class="app__sidebar d-flex flex-column   p-4 ">
           <nav class="ms__nav  d-flex flex-column flex-grow-1 ">
                 <ul class="ms__nav-menu list-unstyled">
                     <li class="menu__item  pb-3">
@@ -78,82 +85,95 @@
             </div>
 
           </nav>
-       </header>
+        </header>
 
-    <main class="app__main-content flex-grow-1">
+        <main class="app__main-content flex-grow-1">
           
-        <div class="main__content-header p-3">
-
+           <div class="main__content-header p-3">
                 <div class="container-fluid">
                     <div class="row flex-column flex-md-row flex-md-nowrap gy-3">
                         
-                        <div class="col-auto col-md-4 col-xl-auto  order-md-3 flex-xl-grow-1 ">
+                        <div class="col-auto col-md-4 col-xl-auto order-md-3 flex-xl-grow-1 ">
                             <div class="col-wrapper d-flex align-items-center column-gap-4 ">
                                <h5 class="m-0">Nuova Studente</h5>
-                               <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <a class="ms__button  d-flex justify-content-center align-items-center text-decoration-none" href="#"><i class="icon-plus fa-solid fa-plus"></i></a></button>
-                               
-                               <!-- off-canvas -->
+                                <div>
+                                    <a class=" ms__button d-flex justify-content-center align-items-center text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" href="#"><i class="icon-plus fa-solid fa-plus"></i></a>
+                                         
+                                       <!-- Off Canvas -->
 
-                               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <form class="row g-3">
-                                        <div class="col-auto col-md-6">
-                                          <label for="inputEmail4" class="form-label">Nome</label>
-                                          <input type="email" class="form-control" id="inputEmail4">
-                                        </div>
-                                        <div class="col-auto col-md-6">
-                                          <label for="inputPassword4" class="form-label">Cognome</label>
-                                          <input type="password" class="form-control" id="inputPassword4">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputEmail4" class="form-label">Email</label>
-                                            <div class="input-group flex-nowrap">
-                                                <span class="input-group-text" id="addon-wrapping">@</span>
-                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-                                              </div>
-                                        </div>
-                                        <div class="col-12">
-                                          <label for="inputAddress2" class="form-label">Password</label>
-                                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                        </div>
-                                        <div class="col-md-6">
-                                          <label for="inputCity" class="form-label">indirizzo</label>
-                                          <input type="text" class="form-control" id="inputCity">
-                                        </div>
-                                        <div class="col-md-4">
-                                          <label for="inputState" class="form-label">Città</label>
-                                          <select id="inputState" class="form-select">
-                                            <option selected>Choose...</option>
-                                            <option>...</option>
-                                          </select>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <label for="inputZip" class="form-label">Stato</label>
-                                            <input type="text" class="form-control" id="inputZip">
+                                       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                         
+                                          <div class="offcanvas-header">
+                                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                           </div>
-                                          <div class="col-12">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                                              <label class="form-check-label" for="gridCheck">
-                                                Check me out
-                                              </label>
-                                            </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
-                                          </div>
-                                        </form>
-                                </div>
-                              </div>
 
-                              <!-- end off canvas -->
-                              
-                            </div>
+                                          <div class="offcanvas-body">
+                                               <form class="row g-3">
+                                                    <div class="col-12 col-md-6">
+                                                       <label for="inputName4" class="form-label">Nome</label>
+                                                       <input type="name" class="form-control" id="inputName4">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                       <label for="inputSurname" class="form-label">Cognome</label>
+                                                       <input type="Surname" class="form-control" id="inputSurname">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                                            <input type="email" class="form-control" aria-label="email" aria-describedby="addon-wrapping">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                     </div>
+                                                    <div class="col-12">
+                                                       <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                       <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                       <label for="inputCity" class="form-label">Città</label>
+                                                       <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <label for="inputState" class="form-label">Stato</label>
+                                                        <input type="text" class="form-control" id="inputState">
+                                                    </div>
+                                                    <div class="col-12 col-md-2">
+                                                        <label for="inputZip" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputFile" class="form-label">Foto</label>
+                                                        <div class="input-group">
+                                                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">Seleziona per proseguire</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-primary">Salva</button>
+                                                        <button type="button" class="btn btn-warning">Svuota</button>
+                                                    </div>
+
+                                               </form>
+                                          </div>
+                                       
+                                        </div>
+
+                                      <!-- end Off Canvas -->
+                                       
+                                </div>
+                            </div>                              
                         </div>
+
+
                         <div class="col-auto col-md-4 col-xl-auto  order-md-1 flex-xl-grow-1 ">
                             <div class="col-wrapper d-flex flex-column column-gap-4 ">
                                 
@@ -185,22 +205,29 @@
                                <p class="student-number">125</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
-        </div>
+           </div>
                 
-        <div class="ms_main__content">
-                      <div class="container-fluid ">
-                           <div class="row g-2">
-                               <div class="col-auto col-xl-7 flex-grow-1  ">
-                                   <div class="card ">
-                                        <div class="card-header">
-                                            <h2>Prossime classi</h2>
-                                        </div>
-                                        <div class="card-body">
-                                            <table class="table">
-                                                <thead class="align-midlle">
-                                                  <tr class="">
+           <div class="ms_main__content">
+                <div class="container-fluid ">
+                    <div class="row g-2">
+
+                    <!-- COLONNA 1 -->
+                        
+                        <div class="col-auto col-xl-7 flex-grow-1  ">
+                    
+                    <!-- card Prossime Classi -->
+                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>Prossime classi</h2>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead class="align-midlle">
+                                            <tr class="">
                                                     <th scope="col">Nome</th>
                                                     <th scope="col">Data Inizio</th>
                                                     <th scope="col">ROI</th>
@@ -320,61 +347,75 @@
                                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                                     </td>
                                                   </tr>
-                                                </tbody>
-                                              </table>
-                                        </div>
-                                   </div>
+                                         </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                    
+                    <!-- end Prossime Classi -->
+                            
+                    <!-- card F.A.Q. -->
                                
-
-                               
-                                    <div class="card  mt-2">
-                                      <div class="card-header">
-                                        <h2>F.A.Q.</h2>
-                                      </div>
-                                      <div class="card-body">
-                                        <div class="accordion" id="accordionExample">
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                  Come aggiungere un nuovo studente?
-                                                </button>
-                                              </h2>
-                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                  <strong>Clicca sul + in alto nela sezione blu.</strong>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                  Come posso accedere alle informazioni del mio account?
-                                                </button>
-                                              </h2>
-                                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <strong>Clicca sull'icona a campanella.</strong>                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                 Posso usare questa dashboard da mobile?
-                                                </button>
-                                              </h2>
-                                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                   <strong>Si, è ottimizzata per la migliore esperienza mobile</strong>
-                                                </div>
-                                              </div>
+                            <div class="card  mt-2">
+                                <div class="card-header">
+                                    <h2>F.A.Q.</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                               Come aggiungere un nuovo studente?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sul + in alto nella sezione blu.*
                                             </div>
                                           </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Clicca sull'icona campanella.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Posso usare questa dashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Questa dashboard è superottimizzata per il mobile.
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
-                                    </div>
-                                </div> 
-                                
-                                <div class="col-auto col-xl-3 flex-xl-grow-1 ">
-                                    <div class="card mb-2">
+                                </div>
+                            </div>   
+                        
+                    <!-- end F.A.Q. -->
+
+                        </div>   
+                        
+                    <!-- End COLONNA 1 -->
+                       
+                        
+                        <!-- COLONNA 2 -->
+                        
+                        <div class="col-auto col-xl-3 flex-xl-grow-1 ">
+                            
+                            <!-- card Todo -->
+                            
+                            <div class="card mb-2">
                                         <div class="card-header">
                                             <h2>Todo</h2>
                                         </div>
@@ -394,33 +435,45 @@
                                                 </li>
                                               </ul>
                                         </div>
+                            </div>
+
+                            <!-- end card Todo -->
+
+                            <!-- card Utenti  -->
+
+                            <div class="card w-100" style="width: 18rem;">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                     </div>
-                                    <div class="card w-100" style="width: 18rem;">
-                                        <img src="img/stats.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Utenti attivi</h5>
-                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                          <li class="list-group-item">Gennaio: 1200</li>
-                                          <li class="list-group-item">Febbraio: 800</li>
-                                          <li class="list-group-item">Marzo: 1500</li>
-                                        </ul>
-                                        <div class="card-body">
-                                          <a href="#" class="card-link">Visualizza report approfondimento</a>
-                                        </div>
-                                      </div>
-                                </div>
-                           </div>
-                       </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondimento</a>
+                                    </div>
+                            </div>
+
+                            <!-- end card Utenti -->
+                        
+                        </div>
+
+                    <!-- end COLONNA 2 -->
+
+                    </div>
                 </div>
-            </div>
+            </div> 
+       
         </main>
+    </div>    
+ 
+    <!-- end Content APP -->
 
-    
+</div>
 
- </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
 </body>
 </html>
