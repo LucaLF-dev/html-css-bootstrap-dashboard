@@ -7,8 +7,7 @@
 }
 
 #app,
-.app__content,
-.app__toolbar{
+.app__content{
     overflow: hidden;
 }
 
