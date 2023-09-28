@@ -41,7 +41,7 @@
 }
 
 .app__logo {
-    width: 15%;
+    padding-right: 20px;
 }
 
 .logo-small {
@@ -53,12 +53,10 @@
 }
 
 .app__search {
-    width: 70%;
+    flex-grow: 2;
 }
 
-.app__items-link {
-    width: 15%;
-}
+
 
 .list__items-link > li a {
     text-decoration: none;
@@ -110,6 +108,19 @@
 
 .ms_badge {
     background-color:#165BBA;
+}
+
+/* Main content */
+
+.image-table {
+    width: 30px;
+    height: 30px;
+}
+
+.ms_main__content {
+    background-color: white;
+    width: 100%;
+
 }
 
 
