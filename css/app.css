@@ -1,4 +1,4 @@
-/* my lyout */
+/* my layout */
 
 
 
@@ -75,9 +75,10 @@
 /* Header  */
 
 .item-icon {
-    line-height: 35px;
+    /* line-height: 35px;
     width: 30px;
-    font-size: 25px;
+    font-size: 25px; */
+    flex-basis: 15px;
 
 }
 
